@@ -11,12 +11,10 @@
 <img src="https://img.shields.io/static/v1?label=IDE&message=IntelliJ&color=5f9ea0&style=plastic"/>
 </p>
 
-<h4 align="center"> :small_orange_diamond: Em desenvolvimento... </h4>
-
 ### :books: Exercícios Práticos
 
 - [x] Exercício 01: Design Pattern Strategy
-- [ ] Exercício 02: Design Pattern Observer
+- [x] Exercício 02: Design Pattern Observer
 
 ### :point_right: Tecnologias
 
@@ -33,7 +31,7 @@ Para a execução dos projetos, é possível fazer o download do código direto 
 
 - Instalar as dependências do pom.xml;
 
-- Executar a classe Principal.
+- Em src, executar a classe Principal para o Design Pattern Strategy e a classe Frase para o  Design Pattern Observer.
 
 ### :computer: Exercício 01 - Sistema de Ordenar Dados
 
@@ -57,6 +55,29 @@ Para a execução dos projetos, é possível fazer o download do código direto 
    - testeArraySortResultado, testeInsertionSortResultado, testeBubbleSortResultado.
 
 Para executar os testes, ir em src > test > package > TestSistemaOrdenarDados. No IntelliJ, para executar os testes, é necessário apertar o símbolo de play (:arrow_forward:) da classe para executar todos os testes ou o símbolo de play de cada @Test para executar os testes individualmente.
+
+### :computer: Exercício 02 - Programa Frase
+
+Programa que recebe uma frase e a quebra em palavras.
+
+- Separadores utilizados no método slipt: espaço em branco (\\s) e ponto final (\\.);
+
+- src/main/java/package:
+  -  Frase: classe main que executará o programa;
+  -  /impl:
+     -  Observavel: classe referente ao objeto que registra, remove e notifica os observadores;
+     -  Observador: classe referente aos clientes do observavel;
+  -  /interf:
+     - iObservavel e iObservador: interfaces.  
+
+### :mag: Testes unitários
+
+1. Caso de teste: Verificar os registros dos observadores:
+   - testeRegistros, testeDoisRegistros.
+2. Caso de teste: Verificar as remoções dos registros dos observadores:
+   - testeRemoverRegistros, testeRemoverUmRegistros.
+
+Para executar os testes, ir em src > test > package > TestObserver. No IntelliJ, para executar os testes, é necessário apertar o símbolo de play (:arrow_forward:) da classe para executar todos os testes ou o símbolo de play de cada @Test para executar os testes individualmente.
 
 ### :woman: Autora
 :link: https://github.com/MaMBassi
